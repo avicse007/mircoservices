@@ -1,0 +1,18 @@
+my:
+ greeting : Avinash
+ list : One,two,three
+app:
+ name: My app
+ description : Welcome to ${app.name}
+dbValues: "{connString:'http://dsfsd/sdfsdf',port:'9090',pass:'password',username:'root'}"
+db:
+ connection : "https:____/___/"
+ port : 9293
+ pass : password
+ username : root
+#Telling actuators to expose every thing 
+management.endpoints.web.exposure.include : "*"
+spring:
+  application:
+    name: spring-boot-config
+spring.cloud.config.uri: http://localhost:8888
